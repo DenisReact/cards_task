@@ -1,0 +1,77 @@
+.card{
+    margin-bottom: 20px;
+    background: white;
+    box-shadow: 2px 2px 8px black;
+    border-radius: 10px;
+    width: 400px;
+    height: 150px;
+    padding: 15px;
+    box-sizing: border-box;
+    position: relative;
+}
+.card.active {
+    border: 2px solid red;
+}
+
+.card .remove{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+.card .remove img{
+    width: 20px;
+    height: 20px;
+}
+.dats{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.dats small{
+    margin-bottom: 4px;
+} 
+.dats span{ 
+    opacity: .5;
+ }
+
+.control{
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    display: flex;
+    align-items: center;
+}
+.control button{
+    padding: 5px 10px;
+    background: #000;
+    margin-left: 10px;
+    border-radius: 5px;
+    color: white;
+}
+.control .save{
+    background: green;
+    opacity: .2;
+    pointer-events: none;
+}
+.control .save.active{
+    opacity: 1;
+    pointer-events: all;
+}
+.control .delete{
+    background: #800;
+}
+.card input[type="text"]{
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.527);
+    outline: none;
+    margin-left: 5px;
+    transition: .6s;
+}
+.card input[type="text"]:focus{
+    border-bottom: 1px solid green;
+}
+
+.card input[type="date"]{
+    margin-left: 5px;
+}

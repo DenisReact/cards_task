@@ -1,0 +1,29 @@
+.cnt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.cnt h2{
+    margin: 40px 0;
+    color: white;
+}
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+    width: 900px;
+    flex-wrap: wrap;
+}
+
+.addCard{
+    margin: 30px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    color: white;
+    border-radius: 50%;
+    font-size: 24px;
+}
